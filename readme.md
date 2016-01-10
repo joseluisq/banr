@@ -12,7 +12,8 @@ $ npm install banr --save-dev
 ## Usage
 
 ```js
-var banr = require('banr')();
+var banr = require('banr'));
+console.log( banr() );
 /*! Banr v1.0.0 | MIT (c) 2016 José Luis Quintana */
 ```
 
