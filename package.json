@@ -1,0 +1,23 @@
+{
+  "name": "banr",
+  "version": "1.0.0",
+  "description": "Get one-line comment banner based on package.json.",
+  "repository": "joseluisq/banr",
+  "license": "MIT",
+  "author": {
+    "name": "José Luis Quintana",
+    "url": "http://git.io/joseluisq"
+  },
+  "keywords": [
+    "banner",
+    "comment",
+    "one-line",
+    "header"
+  ],
+  "scripts": {
+    "test": "`npm bin`/tape test.js"
+  },
+  "devDependencies": {
+    "tape": "*"
+  }
+}
