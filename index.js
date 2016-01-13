@@ -1,5 +1,7 @@
-module.exports = function() {
-  var pkg = require('./package.json');
+var fs = require('fs');
+
+function getTemplate(path) {
+  var pkg = require(path.toString());
   var tmpl = [
     '/*! ',
     pkg.name.charAt(0).toUpperCase(),
@@ -17,4 +19,24 @@ module.exports = function() {
   ].join('');
 
   return tmpl;
-};
+}
+
+function banr(path) {
+  if (!path) {
+    path = process.cwd() + '/package.json';
+  }
+
+  try {
+    var stats = fs.lstatSync(path.toString());
+
+    if (stats.isFile()) {
+      return getTemplate(path);
+    }
+  } catch (e) {
+    return '';
+  }
+
+  return '';
+}
+
+module.exports = banr;
