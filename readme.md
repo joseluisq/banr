@@ -9,9 +9,23 @@
 $ npm install banr --save-dev
 ```
 
+## Structure
+The following keys should be defined in `package.json`:
+
+```json
+{
+  "name": "my-module",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": {
+    "name": "John Doe"
+  }
+}
+```
+
 ## Usage
 
-**Banr** uses the `package.json` located at your [current working directory](https://nodejs.org/api/process.html#process_process_cwd) by default.
+By default, **Banr** uses the `package.json` located at your [current working directory](https://nodejs.org/api/process.html#process_process_cwd):
 
 ```js
 var banr = require('banr');
@@ -19,12 +33,12 @@ banr();
 /*! MyModule v1.0.0 | MIT (c) 2016 John Doe */
 ```
 
-Also it's possible to pass a custom `package.json` path as param:
+Also it's possible to pass a custom `package.json` path:
 
 ```js
 var banr = require('banr');
 banr('./my-module-path/package.json');
-/*! MyModule v2.0.0 | MIT (c) 2017 John Doe */
+/*! MyModule v2.0.0 | MIT (c) 2016 Captain Jack */
 ```
 
 If `package.json` path doesn't exist, an empty string will be returned.
