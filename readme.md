@@ -1,8 +1,6 @@
 # Banr [![Build Status](https://travis-ci.org/joseluisq/banr.svg?branch=master)](https://travis-ci.org/joseluisq/banr)
 > Get one-line comment banner based on your package.json.
 
-![Banr](https://cloud.githubusercontent.com/assets/1700322/12219069/35cca04a-b701-11e5-90a2-4e90e69cb3c8.png)
-
 ## Install
 
 ```sh
