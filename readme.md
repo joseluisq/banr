@@ -42,7 +42,7 @@ banr('./my-module-path/package.json');
 If `package.json` path doesn't exist, an empty string will be returned.
 
 ## Contributions
-[Pull requests](https://github.com/joseluisq/banr/pulls) and [issues](https://github.com/joseluisq/banr/issues) are be welcome.
+[Pull requests](https://github.com/joseluisq/banr/pulls) and [issues](https://github.com/joseluisq/banr/issues) are welcome.
 
 ## License
 MIT license
