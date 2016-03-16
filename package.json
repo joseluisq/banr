@@ -1,6 +1,6 @@
 {
   "name": "banr",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Get one-line comment banner based on package.json.",
   "repository": "joseluisq/banr",
   "license": "MIT",
@@ -15,7 +15,7 @@
     "header"
   ],
   "scripts": {
-    "test": "`npm bin`/tape test.js"
+    "test": "tape test.js"
   },
   "devDependencies": {
     "tape": "*"
