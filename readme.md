@@ -21,6 +21,8 @@ The following keys should be defined in `package.json`:
 }
 ```
 
+`author` value can be defined like object or simply string too.
+
 ## Usage
 
 By default, **Banr** uses the `package.json` located at your [current working directory](https://nodejs.org/api/process.html#process_process_cwd):

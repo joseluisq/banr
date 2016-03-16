@@ -2,6 +2,12 @@ var fs = require('fs');
 
 function getTemplate(path) {
   var pkg = require(path.toString());
+  var author = pkg.author;
+  
+  if (author['name']) {
+    author = author.name;
+  }
+  
   var tmpl = [
     '/*! ',
     pkg.name.charAt(0).toUpperCase(),
@@ -13,7 +19,7 @@ function getTemplate(path) {
     ' (c) ',
     new Date().getFullYear(),
     ' ',
-    pkg.author.name,
+    author,
     ' */',
     '\n'
   ].join('');
