@@ -46,6 +46,9 @@ If `package.json` path doesn't exist, an empty string will be returned.
 ## Contributions
 [Pull requests](https://github.com/joseluisq/banr/pulls) and [issues](https://github.com/joseluisq/banr/issues) are welcome.
 
+## Related
+[banr-stream](https://github.com/joseluisq/banr-stream) - Prepend one-line package.json banner in pipeline.
+
 ## License
 MIT license
 
