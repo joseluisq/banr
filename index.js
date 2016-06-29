@@ -10,8 +10,7 @@ function getTemplate(path) {
   
   var tmpl = [
     '/*! ',
-    pkg.name.charAt(0).toUpperCase(),
-    pkg.name.slice(1),
+    pkg.name,
     ' v',
     pkg.version,
     ' | ',
