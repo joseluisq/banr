@@ -1,13 +1,13 @@
-var fs = require('fs');
+var fs = require('fs')
 
-function getTemplate(path) {
-  var pkg = require(path.toString());
-  var author = pkg.author;
-  
+function getTemplate (path) {
+  var pkg = require(path.toString())
+  var author = pkg.author
+
   if (author['name']) {
-    author = author.name;
+    author = author.name
   }
-  
+
   var tmpl = [
     '/*! ',
     pkg.name,
@@ -21,27 +21,27 @@ function getTemplate(path) {
     author,
     ' */',
     '\n'
-  ].join('');
+  ].join('')
 
-  return tmpl;
+  return tmpl
 }
 
-function banr(path) {
+function banr (path) {
   if (!path) {
-    path = process.cwd() + '/package.json';
+    path = process.cwd() + '/package.json'
   }
 
   try {
-    var stats = fs.lstatSync(path.toString());
+    var stats = fs.lstatSync(path.toString())
 
     if (stats.isFile()) {
-      return getTemplate(path);
+      return getTemplate(path)
     }
   } catch (e) {
-    return '';
+    return ''
   }
 
-  return '';
+  return ''
 }
 
-module.exports = banr;
+module.exports = banr
