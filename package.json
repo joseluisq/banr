@@ -1,6 +1,6 @@
 {
   "name": "banr",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Get one-line comment banner based on package.json.",
   "repository": "joseluisq/banr",
   "license": "MIT",
